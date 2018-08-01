@@ -14,11 +14,6 @@ var hideMyAss = function(){
     console.clear();
 }
 
-// Event Listeners
-document.onreadystatechange = hideMyAss();
-document.load = hideMyAss();
-document.beforeunload = hideMyAss();
-
 // Save a reference to the originals in case we need them
 var _log = console.log,
     _warn = console.warn,
@@ -34,3 +29,8 @@ console.error = function(catchMsg){ console.clear(); }
 console.info = function(catchMsg){ console.clear(); }
 console.table = function(catchMsg){ console.clear(); }
 console.group = function(catchMsg){ console.clear(); }
+
+// Event Listeners
+document.onreadystatechange = hideMyAss();
+document.load = hideMyAss();
+document.beforeunload = hideMyAss();
