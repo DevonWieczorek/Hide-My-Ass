@@ -34,3 +34,4 @@ console.group = function(catchMsg){ console.clear(); }
 document.onreadystatechange = hideMyAss();
 document.load = hideMyAss();
 document.beforeunload = hideMyAss();
+
